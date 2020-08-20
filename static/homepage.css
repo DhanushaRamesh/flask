@@ -1,0 +1,25 @@
+html {
+    background-color:antiquewhite;
+}
+body{
+    text-align: center;
+}
+table {
+  font-family: arial, sans-serif;
+  width: 70%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.center{
+   text-align: center;
+   padding: 20px;
+}
