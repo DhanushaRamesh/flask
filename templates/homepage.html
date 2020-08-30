@@ -23,78 +23,11 @@
             <th>Finish_Date</th>
         </tr>
         <tr>
+            {% if res['status'] == "sucess" %}    // this tags are used in jinja templates in flask
             <th>Prod_Build</th>
             <th>DB REFRESH</th>
-            <td>{{ res }}Status form py</td>
-            <td>Finish-date from py</td>
-        </tr>
-        <tr>
-            <th>SE39</th>
-            <th>DB REFRESH</th>
-            <td>Status form py</td>
-            <td>Finish-date from py</td>
-        </tr>
-        <tr>
-            <th rowspan="6">SE08</th>
-            <th>Stop Services</th>
-            
-            <td>Status from py-stop</td>
-            <td>Finish-date from py</td>
-        </tr>
-        <tr>
-            <th>DB REFRESH</th>
-            <td>Status DB from py</td>
-            <td>Finish-date from py</td>
-        </tr>
-        <tr>
-            <th>DB REFRESH_TPS</th>
-            <td>Status TPS from py</td>
-            <td>Finish-date from py</td>
-       </tr>
-       <tr>
-            <th>Start Services</th>
-            <td>Status start from py</td>
-            <td>Finish-date from py</td>
-       </tr>
-       <tr>
-            <th>Deploy TVE Services</th>
-            <td>Status TVE from py</td>
-            <td>Finish-date from py</td>
-      </tr>
-            <th>Start MDES</th>
-            <td>Status MDES from py</td>
-            <td>Finish-date from py</td>
-      <tr>
-      <tr>
-            <th rowspan="6">SE20</th>
-            <th>Stop Services</th>
-            <td>Status from py-stop</td>
-            <td>Finish-date from py</td>
-        </tr>
-        <tr>
-            <th>DB REFRESH</th>
-            <td>Status DB from py</td>
-            <td>Finish-date from py</td>
-        </tr>
-        <tr>
-            <th>DB REFRESH_TPS</th>
-            <td>Status TPS from py</td>
-            <td>Finish-date from py</td>
-       </tr>
-       <tr>
-            <th>Start Services</th>
-            <td>Status start from py</td>
-            <td>Finish-date from py</td>
-       </tr>
-       <tr>
-            <th>Deploy TVE Services</th>
-            <td>Status TVE from py</td>
-            <td>Finish-date from py</td>
-      </tr>
-            <th>Start MDES</th>
-            <td>Status MDES from py</td>
-            <td>Finish-date from py</td>
-      <tr>
+            <td>{{ res['status'] }}</td>    // use {{ }} to print values
+            <td>Finish-date</td>
         </tr>
     </table>
     </div>
